@@ -1,5 +1,7 @@
 #Easy Class
 
+    #em desenvolvimento!
+
 #REACT + AXIOS + USEFORM;
 
 foi um app inicializado com
