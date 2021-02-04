@@ -1,0 +1,16 @@
+header{
+    width: 20%;
+}
+header h2{
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+@media screen and (max-width:1025px){
+    header p,h2{
+        display: none;
+    }
+    header h1{
+        justify-self: start;
+        align-self: center;
+    }
+}
