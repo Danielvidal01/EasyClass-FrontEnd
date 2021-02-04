@@ -2,6 +2,9 @@ import React from 'react';
 import './styles.css';
 import useForm from '../../hooks/useForm';
 // import axios from 'axios';
+import {Link} from 'react-router-dom';
+
+
 
 export default function Login(){
     const [{values,loading},handleChange,handleSubmit] = useForm();
@@ -25,11 +28,11 @@ export default function Login(){
             <label htmlFor="Password"/>
                 Senha:  
                 <input onChange={handleChange} type="password" name="Password" id="Password" placeholder="*********"/>
-            <button type="submit">{loading ? "enviando...":"enviar"}</button>
+            <button type="submit" className="buttonStyle">{loading ? "enviando...":"enviar"}</button>
             </form>
             <div className="cadastro">
             <p>não é cadastrado?</p>
-            <a href="#">Cadastrar</a>
+            <Link to="/Cadastro" className="buttonStyle">Cadastrar</Link>
             </div>
         </div>
     )

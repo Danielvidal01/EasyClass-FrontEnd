@@ -17,32 +17,33 @@ form{
     flex-direction: column;
 }
 
-form input{
+input{
     width: 100%;
     padding: 8px;
     border-radius: 10px;
-    border: olive 1px solid;
+    border: solid 1px  rgb(49, 174, 233);
     margin-bottom: 25%;
 }
 form h2{
     margin-bottom: 30%;
 }
 
-form button{
-    background-color: olive;
-    border: olive 1px solid;
+.buttonStyle{
+    background-color: rgb(49, 174, 233);
+    border: none;
     padding: 8% 16%;
     border-radius: 10px;
     color:white;
+    cursor: pointer;
+    max-width: 80%;
+    max-height: 4%;
+    transition: ease-in 650ms;
 }
-.formbox a{
-    color: white;
-    background-color: olive;
-    border: olive 1px solid;
-    padding: 2%;
-    border-radius: 10px;
-    margin-top: 8%;
+.buttonStyle:hover{
+    background-color:  rgb(0, 238, 255);
+
 }
+
 .cadastro{
     display: flex;
     align-items: center;
@@ -53,5 +54,15 @@ form button{
 .formbox{
     min-width: 80vw;
     height: 50vh;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 15%;
+}
+form{
+    justify-content: center;
+    align-items: center;
+}
+.cadastro p{
+    margin-bottom: 15%;
 }
 }

@@ -30,7 +30,7 @@ export default function Login(){
             <label htmlFor="LastName"/>
                 LastName:  
                 <input onChange={handleChange} type="LastName" name="LastName" id="LastName" placeholder="LastName"/>
-            <button type='submit'>Enviar</button>
+            <button type='submit' className="buttonStyle">Enviar</button>
         </form>
     )
 }
